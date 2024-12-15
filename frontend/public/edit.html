@@ -1,1 +1,31 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Survey</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="create.html">Create Survey</a>
+            <a href="surveys.html">View Surveys</a>
+        </nav>
+    </header>
+    <main>
+        <form id="edit-survey-form">
+            <label for="edit-title">Survey Title:</label>
+            <input type="text" id="edit-title" required>
+            
+            <label for="edit-description">Description:</label>
+            <textarea id="edit-description" required></textarea>
+            
+            <button type="submit">Update Survey</button>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
+

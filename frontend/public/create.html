@@ -1,1 +1,35 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create a New Survey</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="create.html">Create Survey</a>
+            <a href="surveys.html">View Surveys</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="create-survey-form">
+            <div>
+                <label for="title">Survey Title:</label>
+                <input type="text" id="title" placeholder="Enter survey title" required>
+            </div>
+            <div>
+                <label for="description">Survey Description:</label>
+                <input type="text" id="description" placeholder="Enter survey description" required>
+            </div>
+            <button type="submit">Create Survey</button>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

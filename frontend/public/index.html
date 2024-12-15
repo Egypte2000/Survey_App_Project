@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Survey App - Home</title>
+    <title>Create Survey</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Survey Management App</h1>
-        <img src="logo.png" alt="Team Logo" width="100">
+        <h1>Create a New Survey</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="create.html">Create Survey</a>
@@ -16,12 +15,16 @@
         </nav>
     </header>
     <main>
-        <h2>Available Surveys</h2>
-        <ul id="survey-list">
-            <!-- Surveys will be dynamically added here -->
-        </ul>
+        <form id="create-survey-form">
+            <label for="title">Survey Title:</label>
+            <input type="text" id="title" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+            
+            <button type="submit">Create Survey</button>
+        </form>
     </main>
     <script src="app.js"></script>
 </body>
 </html>
-
